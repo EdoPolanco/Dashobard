@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.miningtag-table {
+    width: 100%;
+}
+.miningtag-header {
+    background-color: #f80!important;
+    color: white;
+}
+.miningtag-footer {
+    background-color: #f80!important;
+    color: white;
+    outline:none;
+}
+.miningtag-button {
+    background-color: #f80!important;
+    color: white;
+}
+.miningtag-center {
+    text-align: center;
+}
+.miningtag-pd-b-1 {
+    padding-bottom: 1rem;
+}
+.miningtag-pd-t-1 {
+    padding-top: 1rem;
+}

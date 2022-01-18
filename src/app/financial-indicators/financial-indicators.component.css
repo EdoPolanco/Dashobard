@@ -1,0 +1,8 @@
+.row {
+  --bs-gutter-x: -0.5rem !important;
+  margin: auto !important;
+}
+.mat-tab-body-content {
+  height: 100%;
+  overflow: none !important;
+}
