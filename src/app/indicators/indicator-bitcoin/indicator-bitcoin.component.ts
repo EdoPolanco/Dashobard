@@ -69,8 +69,10 @@ export class IndicatorBitcoinComponent implements OnInit {
       this.categories.push(new Date(element.fecha).toLocaleDateString());
       this.series.push(element.valor);
     });
-    this.categories.sort((a, b) => b - a);
-    this.series.sort((a, b) => b - a);
+    this.categories.sort(
+      (a, b) => new Date(b).getTime() - new Date(a).getTime()
+    );
+    this.series.sort((a, b) => a - b);
     this.chartsOptions = {
       title: {
         text: 'Indicador Bitcoin',

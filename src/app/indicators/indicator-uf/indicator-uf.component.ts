@@ -67,9 +67,9 @@ export class IndicatorUFComponent implements OnInit {
       });
     }
     this.categories.sort(
-      (a, b) => new Date(a).getTime() - new Date(b).getTime()
+      (a, b) => new Date(b).getTime() - new Date(a).getTime()
     );
-    this.series.sort((a, b) => a - b);
+    this.series.sort((a, b) => b - a);
 
     this.chartsOptions = {
       title: {
